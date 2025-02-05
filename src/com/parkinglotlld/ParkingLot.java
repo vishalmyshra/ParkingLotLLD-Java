@@ -20,6 +20,10 @@ public class ParkingLot {
 		this.tickets = new HashMap<>();
 	}
 
+	public Map<String, ParkingSpot> getParkingSpots() {
+		return parkingSpots;
+	}
+
 	public void addParkingSpot(String spotId, ParkingSpotType spotType) {
 		if (!parkingSpots.containsKey(spotId)) {
 			parkingSpots.put(spotId, new ParkingSpot(spotId, spotType));

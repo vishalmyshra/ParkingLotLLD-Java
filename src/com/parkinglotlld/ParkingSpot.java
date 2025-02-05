@@ -9,7 +9,7 @@ public class ParkingSpot {
 	public ParkingSpot(String parkingSpotId, ParkingSpotType parkingSpotType) {
 		super();
 		this.parkingSpotId = parkingSpotId;
-		this.isVacant = false;
+		this.isVacant = true;
 		this.parkingSpotType = parkingSpotType;
 		this.vehicle = null;
 	}
